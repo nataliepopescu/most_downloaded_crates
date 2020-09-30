@@ -1,3 +1,9 @@
+{
+  "creation_date": {
+    "secs_since_epoch": 1601444958,
+    "nanos_since_epoch": 831514736
+  },
+  "crates": [
     {
       "Package": {
         "name": "rand",
@@ -1198,3 +1204,5 @@
         "version": "0.7.3"
       }
     },
+  ]
+}
