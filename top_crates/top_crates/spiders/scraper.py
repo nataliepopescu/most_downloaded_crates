@@ -7,13 +7,24 @@ import subprocess
 class CratesSpider(scrapy.Spider):
     name = 'top'
     per_page = 50
-    total_page = 10
+    total_page = 2 # FIXME -> 10
     filename = "crates.out"
+    count = 0
 
     def start_requests(self):
         url = 'https://crates.io/api/v1/crates?page={page}&per_page={per_page}&sort=downloads'
-        # seconds: date +%s
-        # nanos: date +%N
+        def write_time():
+            with open(filename, 'w') as f:
+                f.write("{\n")
+                f.write("  \"creation_date\": {\n")
+                # seconds: date +%s
+                f.write("    \"secs_since_epoch\": " + str(18) + ",\n")
+                # nanos: date +%N
+                f.write("    \"nanos_since_epoch\": " + str(21) + ",\n")
+                f.write("  },\n")
+                f.write("  \"crates\": [")
+
+        write_time()
         for page in range(self.total_page):
             yield Request.from_curl(
                 "curl " + url.format(page=page+1, per_page=self.per_page),
@@ -24,7 +35,9 @@ class CratesSpider(scrapy.Spider):
         data = json.loads(response.body.decode('utf-8'))
 
         with open(filename, 'a') as f:
+            global count
             for crate in data['crates']:
+                count += 1
                 if 'name' not in crate or 'newest_version' not in crate:
                     print("Error: invalid json for crate " + crate['id'])
                     return None
@@ -33,4 +46,9 @@ class CratesSpider(scrapy.Spider):
                 f.write("        \"name\": \"" + crate['name'] + "\",\n")
                 f.write("        \"version\": \"" + crate['newest_version'] + "\"\n")
                 f.write("      }\n")
-                f.write("    },\n")
+                if count == (per_page * total_page) {
+                    f.write("    }\n")
+                    f.write("  ]\n")
+                    f.write("}\n")
+                else
+                    f.write("    },\n")
