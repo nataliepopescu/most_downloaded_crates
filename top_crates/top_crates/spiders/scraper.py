@@ -14,7 +14,7 @@ class CratesSpider(scrapy.Spider):
     def start_requests(self):
         url = 'https://crates.io/api/v1/crates?page={page}&per_page={per_page}&sort=downloads'
         def write_time():
-            with open(filename, 'w') as f:
+            with open(self.filename, 'w') as f:
                 f.write("{\n")
                 f.write("  \"creation_date\": {\n")
                 # seconds: date +%s
@@ -34,10 +34,9 @@ class CratesSpider(scrapy.Spider):
     def parse(self, response):
         data = json.loads(response.body.decode('utf-8'))
 
-        with open(filename, 'a') as f:
-            global count
+        with open(self.filename, 'a') as f:
             for crate in data['crates']:
-                count += 1
+                self.count += 1
                 if 'name' not in crate or 'newest_version' not in crate:
                     print("Error: invalid json for crate " + crate['id'])
                     return None
@@ -46,9 +45,9 @@ class CratesSpider(scrapy.Spider):
                 f.write("        \"name\": \"" + crate['name'] + "\",\n")
                 f.write("        \"version\": \"" + crate['newest_version'] + "\"\n")
                 f.write("      }\n")
-                if count == (per_page * total_page) {
+                if self.count == (self.per_page * self.total_page):
                     f.write("    }\n")
                     f.write("  ]\n")
                     f.write("}\n")
-                else
+                else:
                     f.write("    },\n")
