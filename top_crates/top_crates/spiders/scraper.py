@@ -2,12 +2,13 @@ import scrapy
 from scrapy import Request
 import json
 import re
+import os
 import subprocess
 
 class CratesSpider(scrapy.Spider):
     name = 'top'
     per_page = 50
-    total_page = 2 # FIXME -> 10
+    total_page = 10
     filename = "crates.out"
     count = 0
 
@@ -17,10 +18,10 @@ class CratesSpider(scrapy.Spider):
             with open(self.filename, 'w') as f:
                 f.write("{\n")
                 f.write("  \"creation_date\": {\n")
-                # seconds: date +%s
-                f.write("    \"secs_since_epoch\": " + str(18) + ",\n")
-                # nanos: date +%N
-                f.write("    \"nanos_since_epoch\": " + str(21) + ",\n")
+                secs = subprocess.run(["date", "+%s"], stdout=subprocess.PIPE, text=True)
+                f.write("    \"secs_since_epoch\": " + str(secs.stdout[:-1]) + ",\n")
+                nanos = subprocess.run(["date", "+%N"], stdout=subprocess.PIPE, text=True)
+                f.write("    \"nanos_since_epoch\": " + str(nanos.stdout[:-1]) + ",\n")
                 f.write("  },\n")
                 f.write("  \"crates\": [")
 
