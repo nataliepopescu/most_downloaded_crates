@@ -21,7 +21,7 @@ class CratesSpider(scrapy.Spider):
                 secs = subprocess.run(["date", "+%s"], stdout=subprocess.PIPE, text=True)
                 f.write("    \"secs_since_epoch\": " + str(secs.stdout[:-1]) + ",\n")
                 nanos = subprocess.run(["date", "+%N"], stdout=subprocess.PIPE, text=True)
-                f.write("    \"nanos_since_epoch\": " + str(nanos.stdout[:-1]) + ",\n")
+                f.write("    \"nanos_since_epoch\": " + str(nanos.stdout[:-1]) + "\n")
                 f.write("  },\n")
                 f.write("  \"crates\": [")
 
