@@ -1,0 +1,1807 @@
+{
+  "creation_date": {
+    "secs_since_epoch": 1604287972,
+    "nanos_since_epoch": 699049550,
+  },
+  "crates": [    {
+      "Package": {
+        "name": "slab",
+        "version": "0.4.2"
+      }
+    },
+    {
+      "Package": {
+        "name": "crossbeam-epoch",
+        "version": "0.9.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "matches",
+        "version": "0.1.8"
+      }
+    },
+    {
+      "Package": {
+        "name": "futures",
+        "version": "0.3.7"
+      }
+    },
+    {
+      "Package": {
+        "name": "rustc-demangle",
+        "version": "0.1.18"
+      }
+    },
+    {
+      "Package": {
+        "name": "semver-parser",
+        "version": "0.10.1"
+      }
+    },
+    {
+      "Package": {
+        "name": "either",
+        "version": "1.6.1"
+      }
+    },
+    {
+      "Package": {
+        "name": "crossbeam-deque",
+        "version": "0.8.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "rustc_version",
+        "version": "0.3.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "clap",
+        "version": "3.0.0-beta.2"
+      }
+    },
+    {
+      "Package": {
+        "name": "unicode-bidi",
+        "version": "0.3.4"
+      }
+    },
+    {
+      "Package": {
+        "name": "unicase",
+        "version": "2.6.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "fnv",
+        "version": "1.0.7"
+      }
+    },
+    {
+      "Package": {
+        "name": "toml",
+        "version": "0.5.7"
+      }
+    },
+    {
+      "Package": {
+        "name": "ansi_term",
+        "version": "0.12.1"
+      }
+    },
+    {
+      "Package": {
+        "name": "lock_api",
+        "version": "0.4.1"
+      }
+    },
+    {
+      "Package": {
+        "name": "hyper",
+        "version": "0.13.8"
+      }
+    },
+    {
+      "Package": {
+        "name": "memoffset",
+        "version": "0.6.1"
+      }
+    },
+    {
+      "Package": {
+        "name": "mio",
+        "version": "0.7.5"
+      }
+    },
+    {
+      "Package": {
+        "name": "arrayvec",
+        "version": "0.5.2"
+      }
+    },
+    {
+      "Package": {
+        "name": "indexmap",
+        "version": "1.6.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "net2",
+        "version": "0.2.35"
+      }
+    },
+    {
+      "Package": {
+        "name": "itertools",
+        "version": "0.9.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "vec_map",
+        "version": "0.8.2"
+      }
+    },
+    {
+      "Package": {
+        "name": "dtoa",
+        "version": "0.4.6"
+      }
+    },
+    {
+      "Package": {
+        "name": "textwrap",
+        "version": "0.12.1"
+      }
+    },
+    {
+      "Package": {
+        "name": "tokio",
+        "version": "0.3.2"
+      }
+    },
+    {
+      "Package": {
+        "name": "rand_hc",
+        "version": "0.2.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "iovec",
+        "version": "0.1.4"
+      }
+    },
+    {
+      "Package": {
+        "name": "quick-error",
+        "version": "2.0.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "synstructure",
+        "version": "0.12.4"
+      }
+    },
+    {
+      "Package": {
+        "name": "mime",
+        "version": "0.3.16"
+      }
+    },
+    {
+      "Package": {
+        "name": "generic-array",
+        "version": "0.14.4"
+      }
+    },
+    {
+      "Package": {
+        "name": "openssl-sys",
+        "version": "0.9.58"
+      }
+    },
+    {
+      "Package": {
+        "name": "backtrace-sys",
+        "version": "0.1.37"
+      }
+    },
+    {
+      "Package": {
+        "name": "uuid",
+        "version": "0.8.1"
+      }
+    },
+    {
+      "Package": {
+        "name": "rand_pcg",
+        "version": "0.2.1"
+      }
+    },
+    {
+      "Package": {
+        "name": "httparse",
+        "version": "1.3.4"
+      }
+    },
+    {
+      "Package": {
+        "name": "error-chain",
+        "version": "0.12.4"
+      }
+    },
+    {
+      "Package": {
+        "name": "utf8-ranges",
+        "version": "1.0.4"
+      }
+    },
+    {
+      "Package": {
+        "name": "termcolor",
+        "version": "1.1.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "failure",
+        "version": "0.1.8"
+      }
+    },
+    {
+      "Package": {
+        "name": "http",
+        "version": "0.2.1"
+      }
+    },
+    {
+      "Package": {
+        "name": "void",
+        "version": "1.0.2"
+      }
+    },
+    {
+      "Package": {
+        "name": "unicode-segmentation",
+        "version": "1.6.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "openssl",
+        "version": "0.10.30"
+      }
+    },
+    {
+      "Package": {
+        "name": "walkdir",
+        "version": "2.3.1"
+      }
+    },
+    {
+      "Package": {
+        "name": "getrandom",
+        "version": "0.2.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "flate2",
+        "version": "1.0.18"
+      }
+    },
+    {
+      "Package": {
+        "name": "humantime",
+        "version": "2.0.1"
+      }
+    },
+    {
+      "Package": {
+        "name": "sha1",
+        "version": "0.6.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "pest",
+        "version": "2.1.3"
+      }
+    },
+    {
+      "Package": {
+        "name": "serde_yaml",
+        "version": "0.8.14"
+      }
+    },
+    {
+      "Package": {
+        "name": "cmake",
+        "version": "0.1.44"
+      }
+    },
+    {
+      "Package": {
+        "name": "wasi",
+        "version": "0.10.0+wasi-snapshot-preview1"
+      }
+    },
+    {
+      "Package": {
+        "name": "fuchsia-zircon",
+        "version": "0.3.3"
+      }
+    },
+    {
+      "Package": {
+        "name": "fuchsia-zircon-sys",
+        "version": "0.3.3"
+      }
+    },
+    {
+      "Package": {
+        "name": "maplit",
+        "version": "1.0.2"
+      }
+    },
+    {
+      "Package": {
+        "name": "derive_more",
+        "version": "0.99.11"
+      }
+    },
+    {
+      "Package": {
+        "name": "quickcheck",
+        "version": "0.9.2"
+      }
+    },
+    {
+      "Package": {
+        "name": "miniz-sys",
+        "version": "0.1.12"
+      }
+    },
+    {
+      "Package": {
+        "name": "libloading",
+        "version": "0.6.5"
+      }
+    },
+    {
+      "Package": {
+        "name": "thread-id",
+        "version": "3.3.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "schannel",
+        "version": "0.1.19"
+      }
+    },
+    {
+      "Package": {
+        "name": "csv-core",
+        "version": "0.1.10"
+      }
+    },
+    {
+      "Package": {
+        "name": "tokio-tls",
+        "version": "0.3.1"
+      }
+    },
+    {
+      "Package": {
+        "name": "bit-vec",
+        "version": "0.6.2"
+      }
+    },
+    {
+      "Package": {
+        "name": "hermit-abi",
+        "version": "0.1.17"
+      }
+    },
+    {
+      "Package": {
+        "name": "jobserver",
+        "version": "0.1.21"
+      }
+    },
+    {
+      "Package": {
+        "name": "tar",
+        "version": "0.4.30"
+      }
+    },
+    {
+      "Package": {
+        "name": "memmap",
+        "version": "0.7.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "difference",
+        "version": "2.0.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "libgit2-sys",
+        "version": "0.12.14+1.1.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "curl-sys",
+        "version": "0.4.38+curl-7.73.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "git2",
+        "version": "0.13.12"
+      }
+    },
+    {
+      "Package": {
+        "name": "gimli",
+        "version": "0.23.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "tokio-macros",
+        "version": "0.3.1"
+      }
+    },
+    {
+      "Package": {
+        "name": "proc-macro-error-attr",
+        "version": "1.0.4"
+      }
+    },
+    {
+      "Package": {
+        "name": "colored",
+        "version": "2.0.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "static_assertions",
+        "version": "1.1.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "object",
+        "version": "0.22.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "tracing-core",
+        "version": "0.1.17"
+      }
+    },
+    {
+      "Package": {
+        "name": "pest_derive",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "shlex",
+        "version": "0.1.1"
+      }
+    },
+    {
+      "Package": {
+        "name": "tracing",
+        "version": "0.1.21"
+      }
+    },
+    {
+      "Package": {
+        "name": "lru-cache",
+        "version": "0.1.2"
+      }
+    },
+    {
+      "Package": {
+        "name": "wincolor",
+        "version": "1.0.3"
+      }
+    },
+    {
+      "Package": {
+        "name": "hostname",
+        "version": "0.3.1"
+      }
+    },
+    {
+      "Package": {
+        "name": "wasm-bindgen",
+        "version": "0.2.68"
+      }
+    },
+    {
+      "Package": {
+        "name": "fuchsia-cprng",
+        "version": "0.1.1"
+      }
+    },
+    {
+      "Package": {
+        "name": "wasm-bindgen-backend",
+        "version": "0.2.68"
+      }
+    },
+    {
+      "Package": {
+        "name": "wasm-bindgen-macro",
+        "version": "0.2.68"
+      }
+    },
+    {
+      "Package": {
+        "name": "threadpool",
+        "version": "1.8.1"
+      }
+    },
+    {
+      "Package": {
+        "name": "wasm-bindgen-macro-support",
+        "version": "0.2.68"
+      }
+    },
+    {
+      "Package": {
+        "name": "rdrand",
+        "version": "0.7.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "rustls",
+        "version": "0.18.1"
+      }
+    },
+    {
+      "Package": {
+        "name": "wasm-bindgen-shared",
+        "version": "0.2.68"
+      }
+    },
+    {
+      "Package": {
+        "name": "tokio-buf",
+        "version": "0.2.0-alpha.1"
+      }
+    },
+    {
+      "Package": {
+        "name": "typeable",
+        "version": "0.1.2"
+      }
+    },
+    {
+      "Package": {
+        "name": "addr2line",
+        "version": "0.14.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "bstr",
+        "version": "0.2.14"
+      }
+    },
+    {
+      "Package": {
+        "name": "language-tags",
+        "version": "0.2.2"
+      }
+    },
+    {
+      "Package": {
+        "name": "tokio-fs",
+        "version": "0.1.7"
+      }
+    },
+    {
+      "Package": {
+        "name": "tempdir",
+        "version": "0.3.7"
+      }
+    },
+    {
+      "Package": {
+        "name": "tokio-codec",
+        "version": "0.1.2"
+      }
+    },
+    {
+      "Package": {
+        "name": "spin",
+        "version": "0.7.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "phf_codegen",
+        "version": "0.8.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "string",
+        "version": "0.2.1"
+      }
+    },
+    {
+      "Package": {
+        "name": "winapi-util",
+        "version": "0.1.5"
+      }
+    },
+    {
+      "Package": {
+        "name": "untrusted",
+        "version": "0.7.1"
+      }
+    },
+    {
+      "Package": {
+        "name": "cookie",
+        "version": "0.14.2"
+      }
+    },
+    {
+      "Package": {
+        "name": "tokio-uds",
+        "version": "0.2.7"
+      }
+    },
+    {
+      "Package": {
+        "name": "crossbeam",
+        "version": "0.8.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "proc-macro-nested",
+        "version": "0.1.6"
+      }
+    },
+    {
+      "Package": {
+        "name": "ring",
+        "version": "0.17.0-alpha.4"
+      }
+    },
+    {
+      "Package": {
+        "name": "structopt-derive",
+        "version": "0.4.13"
+      }
+    },
+    {
+      "Package": {
+        "name": "structopt",
+        "version": "0.3.20"
+      }
+    },
+    {
+      "Package": {
+        "name": "futures-macro",
+        "version": "0.3.7"
+      }
+    },
+    {
+      "Package": {
+        "name": "tokio-util",
+        "version": "0.5.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "crypto-mac",
+        "version": "0.10.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "ws2_32-sys",
+        "version": "0.2.1"
+      }
+    },
+    {
+      "Package": {
+        "name": "subtle",
+        "version": "2.3.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "futures-executor",
+        "version": "0.3.7"
+      }
+    },
+    {
+      "Package": {
+        "name": "synom",
+        "version": "0.11.3"
+      }
+    },
+    {
+      "Package": {
+        "name": "core-foundation-sys",
+        "version": "0.8.2"
+      }
+    },
+    {
+      "Package": {
+        "name": "core-foundation",
+        "version": "0.9.1"
+      }
+    },
+    {
+      "Package": {
+        "name": "sha-1",
+        "version": "0.9.1"
+      }
+    },
+    {
+      "Package": {
+        "name": "signal-hook-registry",
+        "version": "1.2.2"
+      }
+    },
+    {
+      "Package": {
+        "name": "bincode",
+        "version": "1.3.1"
+      }
+    },
+    {
+      "Package": {
+        "name": "which",
+        "version": "4.0.2"
+      }
+    },
+    {
+      "Package": {
+        "name": "tower-service",
+        "version": "0.3.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "dirs-sys",
+        "version": "0.3.5"
+      }
+    },
+    {
+      "Package": {
+        "name": "cloudabi",
+        "version": "0.1.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "constant_time_eq",
+        "version": "0.1.5"
+      }
+    },
+    {
+      "Package": {
+        "name": "thiserror",
+        "version": "1.0.21"
+      }
+    },
+    {
+      "Package": {
+        "name": "thiserror-impl",
+        "version": "1.0.21"
+      }
+    },
+    {
+      "Package": {
+        "name": "getopts",
+        "version": "0.2.21"
+      }
+    },
+    {
+      "Package": {
+        "name": "pulldown-cmark",
+        "version": "0.8.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "traitobject",
+        "version": "0.1.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "anyhow",
+        "version": "1.0.33"
+      }
+    },
+    {
+      "Package": {
+        "name": "hmac",
+        "version": "0.10.1"
+      }
+    },
+    {
+      "Package": {
+        "name": "proc-macro-error",
+        "version": "1.0.4"
+      }
+    },
+    {
+      "Package": {
+        "name": "c2-chacha",
+        "version": "0.2.4"
+      }
+    },
+    {
+      "Package": {
+        "name": "csv",
+        "version": "1.1.3"
+      }
+    },
+    {
+      "Package": {
+        "name": "fixedbitset",
+        "version": "0.3.1"
+      }
+    },
+    {
+      "Package": {
+        "name": "xml-rs",
+        "version": "0.8.3"
+      }
+    },
+    {
+      "Package": {
+        "name": "arrayref",
+        "version": "0.3.6"
+      }
+    },
+    {
+      "Package": {
+        "name": "vcpkg",
+        "version": "0.2.10"
+      }
+    },
+    {
+      "Package": {
+        "name": "regex-automata",
+        "version": "0.1.9"
+      }
+    },
+    {
+      "Package": {
+        "name": "petgraph",
+        "version": "0.5.1"
+      }
+    },
+    {
+      "Package": {
+        "name": "miow",
+        "version": "0.3.5"
+      }
+    },
+    {
+      "Package": {
+        "name": "tokio-threadpool",
+        "version": "0.1.18"
+      }
+    },
+    {
+      "Package": {
+        "name": "opaque-debug",
+        "version": "0.3.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "fake-simd",
+        "version": "0.1.2"
+      }
+    },
+    {
+      "Package": {
+        "name": "native-tls",
+        "version": "0.2.4"
+      }
+    },
+    {
+      "Package": {
+        "name": "num",
+        "version": "0.3.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "http-body",
+        "version": "0.3.1"
+      }
+    },
+    {
+      "Package": {
+        "name": "encoding_rs",
+        "version": "0.8.24"
+      }
+    },
+    {
+      "Package": {
+        "name": "tokio-tcp",
+        "version": "0.1.4"
+      }
+    },
+    {
+      "Package": {
+        "name": "yaml-rust",
+        "version": "0.4.4"
+      }
+    },
+    {
+      "Package": {
+        "name": "num-bigint",
+        "version": "0.3.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "num-rational",
+        "version": "0.3.1"
+      }
+    },
+    {
+      "Package": {
+        "name": "sha2",
+        "version": "0.9.1"
+      }
+    },
+    {
+      "Package": {
+        "name": "ucd-util",
+        "version": "0.1.8"
+      }
+    },
+    {
+      "Package": {
+        "name": "siphasher",
+        "version": "0.3.3"
+      }
+    },
+    {
+      "Package": {
+        "name": "arc-swap",
+        "version": "1.0.0-rc1"
+      }
+    },
+    {
+      "Package": {
+        "name": "owning_ref",
+        "version": "0.4.1"
+      }
+    },
+    {
+      "Package": {
+        "name": "maybe-uninit",
+        "version": "2.0.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "reqwest",
+        "version": "0.10.8"
+      }
+    },
+    {
+      "Package": {
+        "name": "unreachable",
+        "version": "1.0.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "safemem",
+        "version": "0.3.3"
+      }
+    },
+    {
+      "Package": {
+        "name": "phf_shared",
+        "version": "0.8.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "redox_syscall",
+        "version": "0.2.1"
+      }
+    },
+    {
+      "Package": {
+        "name": "hashbrown",
+        "version": "0.9.1"
+      }
+    },
+    {
+      "Package": {
+        "name": "gcc",
+        "version": "0.3.55"
+      }
+    },
+    {
+      "Package": {
+        "name": "winapi-x86_64-pc-windows-gnu",
+        "version": "0.4.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "tokio-current-thread",
+        "version": "0.1.7"
+      }
+    },
+    {
+      "Package": {
+        "name": "filetime",
+        "version": "0.2.12"
+      }
+    },
+    {
+      "Package": {
+        "name": "winapi-i686-pc-windows-gnu",
+        "version": "0.4.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "hyper-tls",
+        "version": "0.4.3"
+      }
+    },
+    {
+      "Package": {
+        "name": "once_cell",
+        "version": "1.4.1"
+      }
+    },
+    {
+      "Package": {
+        "name": "pin-utils",
+        "version": "0.1.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "phf",
+        "version": "0.8.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "scoped-tls",
+        "version": "1.0.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "block-padding",
+        "version": "0.2.1"
+      }
+    },
+    {
+      "Package": {
+        "name": "futures-core",
+        "version": "0.3.7"
+      }
+    },
+    {
+      "Package": {
+        "name": "tokio-sync",
+        "version": "0.1.8"
+      }
+    },
+    {
+      "Package": {
+        "name": "futures-util",
+        "version": "0.3.7"
+      }
+    },
+    {
+      "Package": {
+        "name": "phf_generator",
+        "version": "0.8.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "futures-task",
+        "version": "0.3.7"
+      }
+    },
+    {
+      "Package": {
+        "name": "num-complex",
+        "version": "0.3.1"
+      }
+    },
+    {
+      "Package": {
+        "name": "futures-channel",
+        "version": "0.3.7"
+      }
+    },
+    {
+      "Package": {
+        "name": "pin-project",
+        "version": "1.0.1"
+      }
+    },
+    {
+      "Package": {
+        "name": "futures-sink",
+        "version": "0.3.7"
+      }
+    },
+    {
+      "Package": {
+        "name": "pin-project-internal",
+        "version": "1.0.1"
+      }
+    },
+    {
+      "Package": {
+        "name": "libz-sys",
+        "version": "1.1.2"
+      }
+    },
+    {
+      "Package": {
+        "name": "futures-cpupool",
+        "version": "0.1.8"
+      }
+    },
+    {
+      "Package": {
+        "name": "tokio-udp",
+        "version": "0.1.6"
+      }
+    },
+    {
+      "Package": {
+        "name": "futures-io",
+        "version": "0.3.7"
+      }
+    },
+    {
+      "Package": {
+        "name": "pin-project-lite",
+        "version": "0.1.11"
+      }
+    },
+    {
+      "Package": {
+        "name": "failure_derive",
+        "version": "0.1.8"
+      }
+    },
+    {
+      "Package": {
+        "name": "typenum",
+        "version": "1.12.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "rand_xorshift",
+        "version": "0.2.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "same-file",
+        "version": "1.0.6"
+      }
+    },
+    {
+      "Package": {
+        "name": "digest",
+        "version": "0.9.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "ppv-lite86",
+        "version": "0.2.9"
+      }
+    },
+    {
+      "Package": {
+        "name": "winapi-build",
+        "version": "0.1.1"
+      }
+    },
+    {
+      "Package": {
+        "name": "nodrop",
+        "version": "0.1.14"
+      }
+    },
+    {
+      "Package": {
+        "name": "kernel32-sys",
+        "version": "0.2.2"
+      }
+    },
+    {
+      "Package": {
+        "name": "crossbeam-queue",
+        "version": "0.3.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "remove_dir_all",
+        "version": "0.6.1"
+      }
+    },
+    {
+      "Package": {
+        "name": "h2",
+        "version": "0.2.7"
+      }
+    },
+    {
+      "Package": {
+        "name": "linked-hash-map",
+        "version": "0.5.3"
+      }
+    },
+    {
+      "Package": {
+        "name": "hex",
+        "version": "0.4.2"
+      }
+    },
+    {
+      "Package": {
+        "name": "miniz_oxide",
+        "version": "0.4.3"
+      }
+    },
+    {
+      "Package": {
+        "name": "block-buffer",
+        "version": "0.9.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "rand_os",
+        "version": "0.2.2"
+      }
+    },
+    {
+      "Package": {
+        "name": "glob",
+        "version": "0.3.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "rand_isaac",
+        "version": "0.2.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "want",
+        "version": "0.3.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "tempfile",
+        "version": "3.1.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "rayon",
+        "version": "1.5.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "foreign-types",
+        "version": "0.5.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "rustc-serialize",
+        "version": "0.3.24"
+      }
+    },
+    {
+      "Package": {
+        "name": "byte-tools",
+        "version": "0.3.1"
+      }
+    },
+    {
+      "Package": {
+        "name": "rayon-core",
+        "version": "1.9.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "crc32fast",
+        "version": "1.2.1"
+      }
+    },
+    {
+      "Package": {
+        "name": "crossbeam-channel",
+        "version": "0.5.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "adler32",
+        "version": "1.2.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "tokio-io",
+        "version": "0.1.13"
+      }
+    },
+    {
+      "Package": {
+        "name": "proc-macro-hack",
+        "version": "0.5.19"
+      }
+    },
+    {
+      "Package": {
+        "name": "foreign-types-shared",
+        "version": "0.3.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "tokio-timer",
+        "version": "0.2.13"
+      }
+    },
+    {
+      "Package": {
+        "name": "nom",
+        "version": "6.0.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "serde_urlencoded",
+        "version": "0.7.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "rand_jitter",
+        "version": "0.3.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "dirs",
+        "version": "3.0.1"
+      }
+    },
+    {
+      "Package": {
+        "name": "tokio-executor",
+        "version": "0.1.10"
+      }
+    },
+    {
+      "Package": {
+        "name": "heck",
+        "version": "0.3.1"
+      }
+    },
+    {
+      "Package": {
+        "name": "lazycell",
+        "version": "1.3.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "try-lock",
+        "version": "0.2.3"
+      }
+    },
+    {
+      "Package": {
+        "name": "num-iter",
+        "version": "0.1.42"
+      }
+    },
+    {
+      "Package": {
+        "name": "mime_guess",
+        "version": "2.0.3"
+      }
+    },
+    {
+      "Package": {
+        "name": "openssl-probe",
+        "version": "0.1.2"
+      }
+    },
+    {
+      "Package": {
+        "name": "nix",
+        "version": "0.19.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "socket2",
+        "version": "0.3.15"
+      }
+    },
+    {
+      "Package": {
+        "name": "mio-uds",
+        "version": "0.6.8"
+      }
+    },
+    {
+      "Package": {
+        "name": "term",
+        "version": "0.6.1"
+      }
+    },
+    {
+      "Package": {
+        "name": "stable_deref_trait",
+        "version": "1.2.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "tokio-reactor",
+        "version": "0.1.12"
+      }
+    },
+    {
+      "Package": {
+        "name": "rand",
+        "version": "0.7.3"
+      }
+    },
+    {
+      "Package": {
+        "name": "syn",
+        "version": "1.0.48"
+      }
+    },
+    {
+      "Package": {
+        "name": "libc",
+        "version": "0.2.80"
+      }
+    },
+    {
+      "Package": {
+        "name": "quote",
+        "version": "1.0.7"
+      }
+    },
+    {
+      "Package": {
+        "name": "rand_core",
+        "version": "0.5.1"
+      }
+    },
+    {
+      "Package": {
+        "name": "unicode-xid",
+        "version": "0.2.1"
+      }
+    },
+    {
+      "Package": {
+        "name": "proc-macro2",
+        "version": "1.0.24"
+      }
+    },
+    {
+      "Package": {
+        "name": "bitflags",
+        "version": "1.2.1"
+      }
+    },
+    {
+      "Package": {
+        "name": "log",
+        "version": "0.4.11"
+      }
+    },
+    {
+      "Package": {
+        "name": "lazy_static",
+        "version": "1.1.1"
+      }
+    },
+    {
+      "Package": {
+        "name": "serde",
+        "version": "1.0.117"
+      }
+    },
+    {
+      "Package": {
+        "name": "num-traits",
+        "version": "0.2.14"
+      }
+    },
+    {
+      "Package": {
+        "name": "regex-syntax",
+        "version": "0.6.21"
+      }
+    },
+    {
+      "Package": {
+        "name": "regex",
+        "version": "1.4.2"
+      }
+    },
+    {
+      "Package": {
+        "name": "cfg-if",
+        "version": "1.0.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "memchr",
+        "version": "2.3.4"
+      }
+    },
+    {
+      "Package": {
+        "name": "autocfg",
+        "version": "1.0.1"
+      }
+    },
+    {
+      "Package": {
+        "name": "aho-corasick",
+        "version": "0.7.14"
+      }
+    },
+    {
+      "Package": {
+        "name": "serde_derive",
+        "version": "1.0.117"
+      }
+    },
+    {
+      "Package": {
+        "name": "serde_json",
+        "version": "1.0.59"
+      }
+    },
+    {
+      "Package": {
+        "name": "byteorder",
+        "version": "1.3.4"
+      }
+    },
+    {
+      "Package": {
+        "name": "base64",
+        "version": "0.13.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "smallvec",
+        "version": "1.4.2"
+      }
+    },
+    {
+      "Package": {
+        "name": "cc",
+        "version": "1.0.61"
+      }
+    },
+    {
+      "Package": {
+        "name": "winapi",
+        "version": "0.3.9"
+      }
+    },
+    {
+      "Package": {
+        "name": "time",
+        "version": "0.2.22"
+      }
+    },
+    {
+      "Package": {
+        "name": "num_cpus",
+        "version": "1.13.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "itoa",
+        "version": "0.4.6"
+      }
+    },
+    {
+      "Package": {
+        "name": "url",
+        "version": "2.1.1"
+      }
+    },
+    {
+      "Package": {
+        "name": "thread_local",
+        "version": "1.0.1"
+      }
+    },
+    {
+      "Package": {
+        "name": "crossbeam-utils",
+        "version": "0.8.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "rand_chacha",
+        "version": "0.2.2"
+      }
+    },
+    {
+      "Package": {
+        "name": "idna",
+        "version": "0.2.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "num-integer",
+        "version": "0.1.44"
+      }
+    },
+    {
+      "Package": {
+        "name": "percent-encoding",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "semver",
+        "version": "0.11.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "scopeguard",
+        "version": "1.1.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "parking_lot_core",
+        "version": "0.8.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "parking_lot",
+        "version": "0.11.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "atty",
+        "version": "0.2.14"
+      }
+    },
+    {
+      "Package": {
+        "name": "version_check",
+        "version": "0.9.2"
+      }
+    },
+    {
+      "Package": {
+        "name": "backtrace",
+        "version": "0.3.54"
+      }
+    },
+    {
+      "Package": {
+        "name": "env_logger",
+        "version": "0.8.1"
+      }
+    },
+    {
+      "Package": {
+        "name": "strsim",
+        "version": "0.10.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "chrono",
+        "version": "0.4.19"
+      }
+    },
+    {
+      "Package": {
+        "name": "bytes",
+        "version": "0.6.0"
+      }
+    },
+    {
+      "Package": {
+        "name": "ryu",
+        "version": "1.0.5"
+      }
+    },
+    {
+      "Package": {
+        "name": "pkg-config",
+        "version": "0.3.19"
+      }
+    },
+    {
+      "Package": {
+        "name": "unicode-normalization",
+        "version": "0.1.13"
+      }
+    },
+    {
+      "Package": {
+        "name": "unicode-width",
+        "version": "0.1.8"
+      }
+    }
+  ]
+}
