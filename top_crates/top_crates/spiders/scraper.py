@@ -8,22 +8,22 @@ import subprocess
 class CratesSpider(scrapy.Spider):
     name = 'top'
     per_page = 50
-    total_page = 10
-    filename = "crates.out"
+    total_page = 998
+    filename = "CrateList.json"
+    namelist = "sorted_crates.py"
     count = 0
+    results = {}
+    crates = []
 
     def start_requests(self):
         url = 'https://crates.io/api/v1/crates?page={page}&per_page={per_page}&sort=downloads'
         def write_time():
-            with open(self.filename, 'w') as f:
-                f.write("{\n")
-                f.write("  \"creation_date\": {\n")
-                secs = subprocess.run(["date", "+%s"], stdout=subprocess.PIPE, text=True)
-                f.write("    \"secs_since_epoch\": " + str(secs.stdout[:-1]) + ",\n")
-                nanos = subprocess.run(["date", "+%N"], stdout=subprocess.PIPE, text=True)
-                f.write("    \"nanos_since_epoch\": " + str(nanos.stdout[:-1]) + "\n")
-                f.write("  },\n")
-                f.write("  \"crates\": [")
+            secs = subprocess.run(["date", "+%s"], stdout=subprocess.PIPE, text=True)
+            nanos = subprocess.run(["date", "+%N"], stdout=subprocess.PIPE, text=True)
+            self.results["creation_date"] = {}
+            self.results["creation_date"]["secs_since_epoch"] = str(secs.stdout[:-1])
+            self.results["creation_date"]["nanos_since_epoch"] = str(nanos.stdout[:-1])
+            self.results["crates"] = []
 
         write_time()
         for page in range(self.total_page):
@@ -35,20 +35,34 @@ class CratesSpider(scrapy.Spider):
     def parse(self, response):
         data = json.loads(response.body.decode('utf-8'))
 
-        with open(self.filename, 'a') as f:
-            for crate in data['crates']:
-                self.count += 1
-                if 'name' not in crate or 'newest_version' not in crate:
-                    print("Error: invalid json for crate " + crate['id'])
-                    return None
-                f.write("    {\n")
-                f.write("      \"Package\": {\n")
-                f.write("        \"name\": \"" + crate['name'] + "\",\n")
-                f.write("        \"version\": \"" + crate['newest_version'] + "\"\n")
-                f.write("      }\n")
-                if self.count == (self.per_page * self.total_page):
-                    f.write("    }\n")
-                    f.write("  ]\n")
-                    f.write("}\n")
-                else:
-                    f.write("    },\n")
+        for crate in data['crates']:
+            self.count += 1
+            if 'name' not in crate or 'newest_version' not in crate:
+                print("Error: invalid json for crate " + crate['id'])
+                return None
+            item = {"Package": {
+                    "name": crate['name'], 
+                    "version": crate['newest_version'],
+                    "downloads": crate['downloads']}}
+            self.crates.append(item)
+
+        # only sort towards end
+        if self.count > (self.per_page * (self.total_page - 1)):
+            sorted_crates = sorted(self.crates, key=lambda d: d["Package"]["downloads"], reverse=True)
+            self.results["crates"] = sorted_crates
+            
+            with open(self.filename, 'w') as f: 
+                json.dump(self.results, f, indent=2)
+            
+            with open(self.namelist, 'w') as f:
+                names = []
+                for c in self.results["crates"]: 
+                    names.append(c["Package"]["name"])
+
+                f.write("sorted_crates = [\n")
+                count = 1
+                for n in names: 
+                    f.write("  \"" + n + "\", # " + str(count) + "\n")
+                    count += 1
+                f.write("]")
+
