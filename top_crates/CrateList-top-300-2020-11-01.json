@@ -1,7 +1,7 @@
 {
   "creation_date": {
     "secs_since_epoch": 1604287972,
-    "nanos_since_epoch": 699049550,
+    "nanos_since_epoch": 699049550
   },
   "crates": [    {
       "Package": {
