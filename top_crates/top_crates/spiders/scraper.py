@@ -8,7 +8,7 @@ import subprocess
 class CratesSpider(scrapy.Spider):
     name = 'top'
     per_page = 10 #50
-    total_page = 1#4 #998
+    total_page = 14 #998
     filename = "CrateList.json"
     namelist = "sorted_crates.py"
     count = 0
@@ -22,8 +22,8 @@ class CratesSpider(scrapy.Spider):
             secs = subprocess.run(["date", "+%s"], stdout=subprocess.PIPE, text=True)
             nanos = subprocess.run(["date", "+%N"], stdout=subprocess.PIPE, text=True)
             self.results["creation_date"] = {}
-            self.results["creation_date"]["secs_since_epoch"] = secs.stdout[:-1]
-            self.results["creation_date"]["nanos_since_epoch"] = nanos.stdout[:-1]
+            self.results["creation_date"]["secs_since_epoch"] = int(secs.stdout[:-1])
+            self.results["creation_date"]["nanos_since_epoch"] = int(nanos.stdout[:-1])
             self.results["crates"] = []
 
         write_time()
