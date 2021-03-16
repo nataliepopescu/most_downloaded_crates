@@ -7,8 +7,8 @@ import subprocess
 
 class CratesSpider(scrapy.Spider):
     name = 'top'
-    per_page = 10 #50
-    total_page = 14 #998
+    per_page = 10
+    total_page = 248
     filename = "CrateList.json"
     namelist = "sorted_crates.py"
     count = 0
@@ -16,7 +16,8 @@ class CratesSpider(scrapy.Spider):
     crates = []
 
     def start_requests(self):
-        self.url = 'https://crates.io/api/v1/crates/bencher/reverse_dependencies?page={page}&per_page={per_page}'
+        self.url = 'https://crates.io/api/v1/?category=no-std&page={page}&per_page={per_page}&sort=downloads'
+        #self.url = 'https://crates.io/api/v1/crates/bencher/reverse_dependencies?page={page}&per_page={per_page}'
         #self.url = 'https://crates.io/api/v1/crates?page={page}&per_page={per_page}&sort=downloads'
         def write_time():
             secs = subprocess.run(["date", "+%s"], stdout=subprocess.PIPE, text=True)
